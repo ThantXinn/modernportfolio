@@ -28,7 +28,6 @@ export const FloatingNav = ({
   const [visible, setVisible] = useState(false);
 
   const [hash, setHash] = useState<string>("");
-
   useEffect(() => {
     // Ensure code runs only on the client-side
     if (typeof window !== "undefined") {
@@ -47,7 +46,8 @@ export const FloatingNav = ({
         window.removeEventListener("hashchange", handleHashChange);
       };
     }
-  }, [window.location.hash]);
+  }, []);
+
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
