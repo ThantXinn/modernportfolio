@@ -92,7 +92,7 @@ export const projects = [
     title: "AWS inventory app",
     des: "Created a full-stack AWS inventory management system using Next.js and Node.js, with real-time data tracking and secure API integration.",
     img: "/awsInventoryApp.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/shadcnui.svg", "/materialui.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/shadcnui.svg", "/materialui.svg","/nodejs.svg"],
     link: "https://main.d2bb5fi54i4tfr.amplifyapp.com/",
     githublink:"https://github.com/ThantXinn/mminventory-management"
   },
