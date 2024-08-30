@@ -10,7 +10,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const FloatingNav = ({
   navItems,
@@ -27,6 +27,27 @@ export const FloatingNav = ({
 
   const [visible, setVisible] = useState(false);
 
+  const [hash, setHash] = useState<string>("");
+
+  useEffect(() => {
+    // Ensure code runs only on the client-side
+    if (typeof window !== "undefined") {
+      // Get the hash from the URL
+      setHash(window.location.hash);
+
+      // Update state on hash change
+      const handleHashChange = () => {
+        setHash(window.location.hash);
+      };
+
+      window.addEventListener("hashchange", handleHashChange);
+
+      // Cleanup event listener
+      return () => {
+        window.removeEventListener("hashchange", handleHashChange);
+      };
+    }
+  }, [window.location.hash]);
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
@@ -72,9 +93,7 @@ export const FloatingNav = ({
             <span className='block sm:hidden'>{navItem.icon}</span>
             <span
               className={`${
-                window.location.hash === navItem.link
-                  ? "text-hover"
-                  : "text-white-200"
+                hash === navItem.link ? "text-hover" : "text-white-200"
               } '!cursor-pointer text-sm'`}>
               {navItem.name}
             </span>

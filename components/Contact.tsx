@@ -14,8 +14,8 @@ const Contact = () => {
       <div className='flex flex-col items-center justify-center overflow-hidden'>
         <h1 className='heading lg:max-w-[45vw] leading-10'>
           Ready to collaborate<span className='text-purple'>?</span> Reach out
-          today, and let's turn <span className='text-purple'>your ideas</span>{" "}
-          into reality.
+          today, and let&apos;s turn{" "}
+          <span className='text-purple'>your ideas</span> into reality.
         </h1>
         <p className='text-white-200 md:mt-10 my-5 text-center'>
           Let&apos;s connect! I&apos;m just a message away from helping you
