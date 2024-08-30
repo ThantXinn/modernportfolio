@@ -92,7 +92,7 @@ export const projects = [
     title: "AWS inventory app",
     des: "Created a full-stack AWS inventory management system using Next.js and Node.js, with real-time data tracking and secure API integration.",
     img: "/awsInventoryApp.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/shadcnui.svg", "/materialui.svg","/nodejs.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/materialui.svg","/nodejs.svg"],
     link: "https://main.d2bb5fi54i4tfr.amplifyapp.com/",
     githublink:"https://github.com/ThantXinn/mminventory-management"
   },
@@ -101,7 +101,7 @@ export const projects = [
     title: "Tiktok Clone with Nextjs",
     des: "Developed a TikTok clone using Next.js, featuring video uploads, real-time feeds, user authentication, and responsive design.",
     img: "/tiktokClone.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/sanity.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/sanity.svg","/shadcnui.svg"],
     link: "https://tiktok-clone-local-fh7jkn408-thantxinns-projects.vercel.app/",
     githublink:"https://github.com/ThantXinn/tiktok_clone"
   },
